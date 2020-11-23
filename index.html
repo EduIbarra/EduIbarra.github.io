@@ -1,40 +1,356 @@
 <!DOCTYPE html>
-<html>
+<html
+  dir="ltr"  lang="zxx">
 
   <head>
     <meta charset="utf-8">
     <title> Eduardo Ibarra </title>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -
+    |
+    | VALIDACIÓN de PÁGINA
+    | --------------------
+    |
+    |   Para validar el código ir a la página:
+    |
+    |     http://validator.w3.org
+    |
+    |   en la solapa:
+    |
+    |     'Validate by Direct Input'
+    |
+    |   o link:
+    |
+    |     https://validator.w3.org/#validate_by_input
+    |
+    |   Poner allí todo el contenido de este archivo,
+    |   colocando las reglas del 'archivo de estilos'
+    |   entre las siguientes marcas o etiquetas "style".
+    |
+    |   Luego de eso, pulsar el botón 'Check'.
+    |
+    |   Allí aparecerán los errores de código.
+    |
+    |  - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <style>
+      /*
+      Colocar aquí el código del archivo de estilos
+      (en este caso es el archivo "estilo.css").
+      */
+    </style>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="estilo.css"
+    >
   </head>
+
+    <!--*********************************************************************-->
+    <!--*********************************************************************-->
 
   <body>
 
-    <h1> Título Principalísimo </h1>
+    <!-- =================================================================== -->
 
-    <h2> Introducción </h2>
+    <div id="menu_izquierdo">
+        <h3>Menú izquierdo</h3>
 
-    <p>
-      Párrafo 1:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquid ex ea commodi consequat.
-        Quis aute iure reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint obcaecat cupiditat non proident,
-        sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+        <p>
+          Opciones:
+        </p>
 
-    <h2>
-      Subtítulo 1
-    </h2>
+        <ul class="opciones_menu_izquierda">
+          <li>
+            <a
+              target="_blank"
+              href="http://en.wikipedia.org/wiki/Grace_Hopper">
+              Quienes somos
+            </a>
+          </li>
+        </ul>
 
-    <p>
-      Párrafo 1: <br>
-      Línea 1 <br>
-      Línea 2 <br>
-      Línea 3
-    </p>
+        <ul class="opciones_menu_izquierda">
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/QrR_gm6RqCo">
+              Video 01
+            </a>
+          </li>
+        </ul>
 
+        <ul class="opciones_menu_izquierda">
+          <li>
+            <a
+              target="_blank"
+              href="https://www.google.com.ar/maps/place/Los+Sabios+Restaurante/@-34.6033699,-58.4194278,17z/data=!4m12!1m6!3m5!1s0x95bcca8a09a7ec0b:0x6cc599522c2f7e69!2sLos+Sabios+Restaurante!8m2!3d-34.6033699!4d-58.4172391!3m4!1s0x95bcca8a09a7ec0b:0x6cc599522c2f7e69!8m2!3d-34.6033699!4d-58.4172391">
+              ¿ Dónde estamos ?
+            </a>
+          </li>
+        </ul>
+
+    </div>
+
+    <!-- =================================================================== -->
+
+    <div id="contenedor">
+
+      <header>
+        <h1> Título Principalísimo </h1>
+        <br>
+
+        <h2> Introducción </h2>
+
+        <!-- Paisaje, Grito y Saltarín -->
+        <img id="paisaje"  alt="paisaje"  src="https://www.kasandbox.org/programming-images/landscapes/fields-of-grain.png">
+        <img id="saltarin" alt="saltarin" src="https://www.kasandbox.org/programming-images/avatars/Hopper-jumping.gif">
+        <img id="grito"    alt="grito"    src="https://www.kasandbox.org/programming-images/creatures/Winston.png">
+
+        <!-- Vínculos internos en HTML -->
+        <ul>
+          <li> <a href="#parrafo_Nro_7"> Párrafo 7 </a> (link interno) </li>
+          <li> <a href="#parrafo_Nro_8"> Párrafo 8 </a> (link interno) </li>
+        </ul>
+
+      </header>
+
+      <main>
+
+        <p>
+          Párrafo 1: <br> <br>
+
+            <img
+            id="anteojudo"
+            alt="Anteojudo simpático"
+            src="https://www.kasandbox.org/programming-images/creatures/Hopper-Cool.png">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquid ex ea commodi consequat.
+            Quis aute iure reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint obcaecat cupiditat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquid ex ea commodi consequat.
+            Quis aute iure reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint obcaecat cupiditat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquid ex ea commodi consequat.
+            Quis aute iure reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint obcaecat cupiditat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <h2>
+          Subtítulo 1
+        </h2>
+
+        <p>
+          Párrafo 1 bis: <br>
+          Línea 1 <br>
+          Línea 2 <br>
+          Línea 3
+        </p>
+
+        <!--
+        Estilos en línea: Tratar de evitarlos (pueden confundirnos) !
+        Colocamos un estilo de CSS dentro de una etiqueta
+        -->
+        <h3 style="background: salmon; color: white;">
+          Sub-Subtítulo 4
+        </h3>
+
+        <p class="parrafos">
+          Párrafo 4:  <br>
+            Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+            sed eiusmod tempor incidunt ut <br> labore et dolore magna aliqua.
+            Ut enim ad minim veniam, <br> quis nostrud exercitation
+            ullamco laboris nisi ut aliquid <br> ex ea commodi consequat.
+            Quis aute iure reprehenderit <br> in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint obcaecat <br> cupiditat non proident,
+            sunt in culpa qui officia deserunt <br> mollit anim id est laborum.
+        </p>
+
+        <p>
+          <img src="https://www.kasandbox.org/programming-images/misc/tim-berners-lee-webpage.png"
+               alt="Tim Berners-Lee inventor del primer navegador en el CERN"
+               width="400">
+          <br> Imagen cortesía del CERN
+        </p>
+
+
+        Ver
+        <a
+           target="_blank"
+           href="http://home.web.cern.ch/topics/birth-web">
+           aquí
+        </a>
+        más info sobre la historia del HTML.
+
+
+        <a target="_blank"
+           href="https://es.wikipedia.org/wiki/Tim_Berners-Lee">
+            <p>
+              <img src="https://www.kasandbox.org/programming-images/misc/tim-berners-lee-webpage.png"
+                   alt="Tim Berners-Lee inventor en el CERN"
+                   width="100">
+              <br> Este es  un capo...
+            </p>
+        </a>
+
+
+        <p id="parrafo_05">
+          Párrafo 5: <br>
+            Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+            sed eiusmod tempor incidunt ut <br> labore et dolore magna aliqua.
+            Ut enim ad minim veniam, <br> quis nostrud exercitation
+            ullamco laboris nisi ut aliquid <br> ex ea commodi consequat.
+            Quis aute iure reprehenderit <br> in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint obcaecat.
+        </p>
+
+        <p class="parrafos">
+          Párrafo 6: <br>
+            Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+            sed eiusmod tempor incidunt ut <br> labore et dolore magna aliqua.
+            Ut enim ad minim veniam, <br> quis nostrud exercitation
+            ullamco laboris nisi ut aliquid.
+        </p>
+
+        <p id="parrafo_Nro_7">
+          Párrafo 7:<br>
+            Lorem ipsum dolor sit amet, <br>
+            <span class="palabras_destacadas">
+              consectetur adipiscing elit</span>,
+            <br>
+            sed eiusmod
+            <span style="color:cyan; background-color: rgb(0, 0, 255)">
+            tempor incidunt tempor incidunt</span>
+            labore et colore magna
+            <!--
+            <font color=blue>
+              dolore
+            </font color>
+            -->
+            <span style="color:blue; font-style: italic; font-weight: bold">
+            dolore</span>
+            aliqua.
+
+        </p>
+
+        <p id="parrafo_Nro_8">
+          Párrafo 8:<br>
+            Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+            sed eiusmod tempor incidunt ut <br>.
+        </p>
+
+        <p class="parrafos">
+          Párrafo 9: <br>
+            Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+            sed eiusmod tempor incidunt ut <br> labore et dolore magna aliqua.
+            Ut enim ad minim veniam, <br> quis nostrud exercitation
+            ullamco laboris nisi ut aliquid.
+        </p>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <div id="parrafos_10_y_11">
+          <p>
+            Párrafo 10:<br>
+              Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+              sed eiusmod tempor incidunt.
+          </p>
+
+          <p class="parrafos">
+            Párrafo 11: <br>
+              Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+              sed eiusmod tempor incidunt ut <br> labore et dolore magna aliqua.
+              Ut enim ad minim veniam, <br> quis nostrud exercitation
+              ullamco laboris nisi ut aliquid.
+          </p>
+        </div>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <div id="parrafos_12_a_14">
+          <p>
+            <u>Párrafo 12</u>:<br>
+              <img
+                id="gatito"
+                alt="Gato Mini"
+                src="https://www.kasandbox.org/programming-images/animals/cat.png">
+
+              Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+              sed eiusmod tempor incidunt.
+          </p>
+
+          <p>
+            <em>Párrafo 13</em>:<br>
+              Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+              sed eiusmod tempor incidunt ut <br> labore et dolore magna aliqua.
+              Ut enim ad minim veniam, <br> quis nostrud exercitation
+              ullamco laboris nisi ut aliquid.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit,
+              sed eiusmod tempor incidunt ut, labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquid.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit,
+              sed eiusmod tempor incidunt ut, labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquid.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit,
+              sed eiusmod tempor incidunt ut, labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquid.
+          </p>
+
+          <p>
+            <!--
+            NEGRITA, PERO NO FUNCIONA...
+            </b> Párrafo 14 </b>: <br>
+            </strong> Párrafo 14 </strong>: <br>
+            -->
+            Párrafo 14: <br>
+              Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+              sed eiusmod tempor incidunt ut <br> labore et dolore magna aliqua.
+              Ut enim ad minim veniam, <br> quis nostrud exercitation
+              ullamco laboris nisi ut aliquid.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit,
+              sed eiusmod tempor incidunt ut, labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquid.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit,
+              sed eiusmod tempor incidunt ut, labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquid.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit,
+              sed eiusmod tempor incidunt ut, labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquid.
+          </p>
+        </div>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+      </main>
+
+      <footer>
+      </footer>
+
+    </div> <!-- fin contenedor -->
   </body>
 
 </html>
