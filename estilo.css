@@ -1,0 +1,382 @@
+h1 {
+  /*
+  color: rgb(255, 0, 0);
+  color: #FFF;
+  */
+  color: rgb(255, 0, 0);
+
+  /*
+  SOMBREADO ALREDEDOR del TEXTO
+    http://sudeeprana.com/adding-border-outline-around-text-in-html-css-solved/
+  /*
+  /*
+  text-shadow: 2px 2px 0px #000;
+  */
+  text-shadow: 0px -2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, -2px 0px 0 #000;
+
+  background-color: rgb(200, 200, 100);
+
+  position: fixed;  /* Posicionamiento fijo (se usa para buscador, barras superiores, etc) */
+  z-index: 4;
+  top : 0.2%;
+  left: 15%;
+
+}
+
+h2 {
+  color: rgb(0, 0, 255, 0.40);
+}
+
+h3 {
+  /*
+  color: rgb(0, 255, 0);
+  */
+  color: blue;
+  font-family: serif;
+}
+
+body {
+  background-color: rgb(161, 245, 182);
+}
+
+p {
+  color: rgb(191, 0, 255);
+  /*
+  background-color: rgb(205, 240, 180);
+  */
+  font-family: sans-serif;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/*
+Esta regla pinta los ENLACES SIN VISITAR de color ROJO.
+Se recomienda NO usarla y seguir con las convenciones
+(color AZUL por defecto y subrayado de caracteres):
+a:link {
+  color: red;
+}
+*/
+
+        /* . . . . . . . . . . . . . . . . . . */
+
+/*
+Esta regla pinta los enlaces VISITADOS de color NARANJA.
+Se recomienda NO usarla y seguir con las convenciones
+(color MORADO por defecto):
+a:visited {
+  color: orange;
+}
+*/
+
+        /* . . . . . . . . . . . . . . . . . . */
+
+/*
+Esta regla pinta los ENLACES cuando
+se pasa el cursor del mouse por arriba:
+*/
+a:hover {
+  background-color: rgb(255, 214, 255);
+}
+
+
+        /* . . . . . . . . . . . . . . . . . . */
+
+/*
+Esta regla pinta los ENLACES justo antes
+de que pasemos al elemento seleccionado:
+*/
+
+a:active {
+  background-color: rgb(255, 214, 255);
+}
+
+        /* . . . . . . . . . . . . . . . . . . */
+
+/*
+Esta regla pinta los ENLACES cuando
+se los selecciona con el TABULADOR (Tab):
+*/
+a:focus {
+  background-color: rgb(255, 214, 255);
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Estilo de una parte con ID */
+#parrafo_05 {
+  background-color: yellow;
+  /* Tipo de letra + familia de tipos de letra de respaldo,
+  por si quien ve la página no posee la fuente 'Helvética'  */
+
+  /* FUENTES o TIPOGRAFÍAS */
+  /* --------------------- */
+  font-family: "Helvetica", sans-serif;
+  /* font-size: 8px; */  /* tamaño de la letra */
+  font-size: 0.85em;     /* tamaño de la letra */
+  font-weight: bold;     /* negrita */
+  font-style: italic;    /* itálica, versalita */
+
+  /* ALINEADO DEL TEXTO */
+  /* ------------------ */
+  /* line-height: 15px; */         /* interlineado */
+  line-height: 1.5em;              /* interlineado */
+  /* text-align: center; */        /* centrado */
+  /* text-align: left;   */        /* izquierda */
+  /* text-align: right;  */        /* derecha */
+  text-align: center;
+  text-decoration: underline;      /* subrayado */
+
+  /* SOMBREADO */
+  /* --------- */
+  /* Ver: https://developer.mozilla.org/es/docs/Web/CSS/text-shadow */
+  text-shadow: 5px 5px #558ABB;    /* sombreado de texto */
+}
+
+/* Estilo de diferentes partes con CLASS */
+.parrafos {
+  background-color: orange;
+  font-family: cursive;
+  /* font-size: 8px; */
+  font-size: 1.3em;
+}
+
+.palabras_destacadas {
+  color: rgb(255, 0, 0);
+  font-style: italic;
+}
+
+#parrafos_10_y_11 {
+  background: rgb(230, 230, 230); /* Fondo gris para estos párrafos */
+}
+
+/* ------------------------------------------------------------------------- */
+
+/*
+Propiedades width, height y overflow en CSS
+https://es.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pt/css-width-height-and-overflow
+*/
+#parrafos_12_a_14 {
+  background: rgb(191, 151, 191);
+  width: 40%;       /* Ancho de la caja de texto */
+  height: 180px;    /* Alto  de la caja de texto */
+
+  /* DESBORDE */
+  /* -------- */
+    /* Si el texto se DESBORDA respecto de la caja definida */
+    /*
+    overflow: auto;      <-- acomoda el texto dentro de la caja y agrega barra de desplazamiento
+    overflow: visible;   <-- se muestra el texto que desborda la caja
+    overflow: hidden;    <-- recorta el texto para que no sobresalga
+    */
+    overflow-y: auto;    /* Muestra barras de desplazamiento */
+    overflow-x: hidden;
+
+    margin: 15px 10px 10px 6px; /* márgenes (sentido horario): arriba, derecha, abajo, izquierda */
+
+    /*  BORDES de diferentes grosores, tipos y colores */
+    /*
+    border: 20px dashed rgb(255, 161, 161);
+    border: 20px dotted rgb(255, 161, 161);
+    */
+    border: 20px dotted rgb(255, 161, 161);
+
+    padding: 15px;  /* Relleno entre el texto y el primer borde  */
+}
+
+/* ------------------------------------------------------------------------- */
+/*
+Modelo de caja en CSS
+https://es.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pt/css-box-model
+
+  Modelo de Cajas en CSS
+  ----------------------
+
+    ,------------------------------,
+    |            margin            |
+    | ,--------------------------, |
+    | |          border          | |
+    | | ,----------------------, | |
+    | | |        padding       | | |
+    | | |  ,-----------------, | | |
+    | | |  |    content      | | | |
+    | | |  | contenido real  | | | |
+    | | |  '-----------------' | | |
+    | | |       relleno        | | |
+    | | '----------------------' | |
+    | |          borde           | |
+    | '--------------------------' |
+    |            margen            |
+    '------------------------------'
+
+*/
+
+#contenedor {
+  width: 1000px;
+
+  /*  Márgenes arriba, derecha, abajo, izquierda: */
+  /*
+  margin-top:    30px;
+  margin-right:  20px;
+  margin-bottom: 20px;
+  margin-left:   20px;
+  */
+
+  /**/
+  margin: auto;
+  /**/
+
+  /* Borde ROJO en toda la caja */
+  /**/
+  border:      1px solid rgb(255, 0, 0);  /* grosor tipo(sólido) color */
+  border-top: 10px solid purple;          /* grosor tipo(sólido) color */
+  /**/
+
+  padding: 15px;  /* Relleno entre el texto y el primer borde  */
+}
+
+#gatito {
+  /* Gatito aplastado (por las dimensiones de la imagen) */
+  width: 120px;
+  height: 40px;  /* Aplastamiento gatuno !!!! */
+
+  margin-top:    20px;
+  margin-right:  20px;
+  margin-bottom: 20px;
+  margin-left:   20px;
+
+  /* BORDES de la IMAGEN del gatito aplastado */
+  /*
+  border: 6px groove red;
+  border: 6px double green;  --> borde de doble línea
+  border: 6px ridge purple;
+  */
+  border: 3px ridge purple;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+/*
+Posición en CSS
+---------------
+  https://es.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pt/css-position
+*/
+
+/* Paisaje, Grito y Saltarín */
+/* ------------------------- */
+
+#paisaje {
+  width: 250px;
+  position: absolute;
+  top: 20px;
+  left: 800px;
+
+  /* Índice en eje "z", hacia fuera de la pantalla (desde el fondo a la superficie) */
+  z-index: 1;
+}
+
+#grito {
+  position: absolute;
+  top: 50px;
+  left: 850px;
+
+  /* Índice en eje "z", hacia fuera de la pantalla (desde el fondo a la superficie) */
+  z-index: 2;
+}
+
+#saltarin {
+  /*
+  position: absolute;
+  */
+  position: fixed;   /* Posicionamiento fijo (se usa para buscador, barras superiores, etc) */
+  top: 30px;
+  left: 870px;
+
+  /* Índice en eje "z", hacia fuera de la pantalla (desde el fondo a la superficie) */
+  z-index: 3;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/*
+Elementos flotantes en CSS
+  https://es.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pt/css-floating-elements
+*/
+
+#anteojudo {
+  float: left;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+/* MENU de la IZQUIERDA */
+#menu_izquierdo
+ {
+  position: fixed;   /* Posicionamiento fijo (se usa para buscador, barras superiores, etc) */
+  /*
+  float: left;
+  */
+  width: 10%;
+
+  border: 3px ridge purple;
+
+  margin-right: 10px;
+  margin-bottom:10px;
+
+  /* interlineado */
+  /*
+  line-height: 2em;
+  */
+}
+
+ul.opciones_menu_izquierda li {
+
+  /*
+  Cajitas alrededor de las opciones:
+  */
+  /*
+  background-color: #faf8f2;
+  border: 1px solid #876823;
+  display: inline-block;
+  padding: 0 5px;
+  */
+
+  /*
+  line-height: 2em;
+  */
+
+  /* Sacar los puntos de la lista */
+  /*
+  display: inline-block;
+  */
+}
+
+
+/*
+  NOTA:
+  ----
+
+    https://es.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pt/css-floating-elements
+
+  Poniendo algunos "div" con:
+
+    width, height, margin, padding, float, clear
+
+  hay todo tipo de diseños de páginas web
+  a nuestro alcance.
+
+*/
+
+/* ------------------------------------------------------------------------- */
+
+/*
+
+Diseño de páginas web:
+---------------------
+
+  https://es.khanacademy.org/computing/computer-programming/html-css/html-css-further-learning/a/webpage-design
+
+*/
+
+/* ------------------------------------------------------------------------- */
